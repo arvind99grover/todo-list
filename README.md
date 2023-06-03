@@ -1,23 +1,43 @@
-# Getting Started with Create React App
+# Todolist App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple Todolist app that helps you keep track of your tasks and stay organized. The app allows you to fetch and display todo items from an API, add new items, update existing items, and delete items.
 
-## Available Scripts
+## Features
+Fetch and show todo items from the API: The app makes a GET request to the JSONPlaceholder API and displays the todo items.
+Add a todo item: You can add a new item by entering the task description and pressing the "Add" button. The app makes a POST request to the API to save the item in the React state.
+Update an item: You can update an existing item by editing its description and clicking the "Update" button. The app makes a PUT request to the API to update the item.
+Delete an item: You can delete a todo item by clicking the "Delete" button. The app makes a DELETE request to the API to remove the item.
 
-In the project directory, you can run:
+### Technologies Used
+The Todolist app is built using the following technologies:
 
-### `npm start`
+React: A JavaScript library for building user interfaces.
+CSS: Style sheet language for designing the app's appearance.
+Html: Markup language for creating the user interface.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Installation
+To run the Todolist app locally, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Clone this repository: git clone https://github.com/arvind99grover/todo-list.git
+Navigate to the project directory: cd todo-list
+Open the index.html file in your web browser.
 
-### `npm test`
+### Usage
+Fetch todo items: The app automatically fetches todo items from the JSONPlaceholder API and displays them.
+Add a todo item: Enter the task description in the input field and click the "Add" button. The item will be added to the todo list.
+Update an item: Click the "Edit" button next to an item, modify the description, and click the "Update" button.
+Delete an item: Click the "Delete" button next to an item to remove it from the list.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Demo
+A live demo of the Todolist app is available at https://arvind99grover.github.io/todo-list/
+
+### API
+The Todolist app uses the JSONPlaceholder API to fetch, add, update, and delete todo items.
+
+Fetch todos: GET https://jsonplaceholder.typicode.com/todos
+Add todo: POST https://jsonplaceholder.typicode.com/todos
+Update todo: PUT https://jsonplaceholder.typicode.com/todos/{id}
+Delete todo: DELETE https://jsonplaceholder.typicode.com/todos/{id}
 
 ### `npm run build`
 
